@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DriverReview">
+    <Key>
+      <PropertyRef Name="ReviewCode" />
+    </Key>
+    <Property Name="ReviewCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Review" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DriverReviewCode" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RegularUser" Relationship="Self.FK__DriverRev__UserI__5AEE82B9" FromRole="DriverReview" ToRole="RegularUsers" />
+    <NavigationProperty Name="TaxiDriver" Relationship="Database1Model.FK__DriverRev__Drive__4E53A1AA" FromRole="DriverReview" ToRole="TaxiDriver" />
+  </EntityType>
+  <EntityType Name="RegularUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CellphoneuserNumber" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RecommendedDriverCode" Type="Int32" />
+    <NavigationProperty Name="DriverReviews" Relationship="Self.FK__DriverRev__UserI__5AEE82B9" FromRole="RegularUsers" ToRole="DriverReview" />
+    <NavigationProperty Name="TaxiDriver" Relationship="Self.FK__RegularUs__Recom__41EDCAC5" FromRole="RegularUsers" ToRole="TaxiDriver" />
+    <NavigationProperty Name="Travels" Relationship="Self.FK__Travel__UserId__151B244E" FromRole="RegularUsers" ToRole="Travel" />
+  </EntityType>
+  <EntityType Name="TaxiDriver">
+    <Key>
+      <PropertyRef Name="DriverId" />
+    </Key>
+    <Property Name="DriverId" Type="Int32" Nullable="false" />
+    <Property Name="DriverName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PelephoneDriverNumber" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VehicleTaxiCode" Type="Int32" Nullable="false" />
+    <Property Name="CurrentLocationLat" Type="Double" Nullable="false" />
+    <Property Name="CurrentLocationLng" Type="Double" Nullable="false" />
+    <Property Name="ImageDriver" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="StationCode" Type="Int32" />
+    <Property Name="Prioritys" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RegularUsers" Relationship="Self.FK__RegularUs__Recom__41EDCAC5" FromRole="TaxiDriver" ToRole="RegularUsers" />
+    <NavigationProperty Name="TaxiStation" Relationship="Self.FK__TaxiDrive__Stati__43D61337" FromRole="TaxiDriver" ToRole="TaxiStations" />
+    <NavigationProperty Name="Taxi" Relationship="Self.FK__TaxiDrive__Vehic__42E1EEFE" FromRole="TaxiDriver" ToRole="Taxis" />
+    <NavigationProperty Name="DriverReviews" Relationship="Database1Model.FK__DriverRev__Drive__4E53A1AA" FromRole="TaxiDriver" ToRole="DriverReview" />
+    <NavigationProperty Name="Travels" Relationship="Database1Model.FK__Travel__Priority__503BEA1C" FromRole="TaxiDriver" ToRole="Travel" />
+  </EntityType>
+  <EntityType Name="Taxi">
+    <Key>
+      <PropertyRef Name="VehicleTaxiCode" />
+    </Key>
+    <Property Name="VehicleTaxiCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationCode" Type="Int32" Nullable="false" />
+    <Property Name="NumberOfSeats" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TaxiDrivers" Relationship="Self.FK__TaxiDrive__Vehic__42E1EEFE" FromRole="Taxis" ToRole="TaxiDriver" />
+    <NavigationProperty Name="TaxiStation" Relationship="Self.FK__Taxis__StationCo__01142BA1" FromRole="Taxis" ToRole="TaxiStations" />
+  </EntityType>
+  <EntityType Name="TaxiStation">
+    <Key>
+      <PropertyRef Name="StationCode" />
+    </Key>
+    <Property Name="StationCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CityStationLocation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NumbrOfTaxis" Type="Int32" Nullable="false" />
+    <Property Name="PricePerKilometer" Type="Double" Nullable="false" />
+    <NavigationProperty Name="TaxiDrivers" Relationship="Self.FK__TaxiDrive__Stati__43D61337" FromRole="TaxiStations" ToRole="TaxiDriver" />
+    <NavigationProperty Name="Taxis" Relationship="Self.FK__Taxis__StationCo__01142BA1" FromRole="TaxiStations" ToRole="Taxis" />
+  </EntityType>
+  <EntityType Name="Travel">
+    <Key>
+      <PropertyRef Name="TravelCode" />
+    </Key>
+    <Property Name="TravelCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="StartingPointLat" Type="Double" Nullable="false" />
+    <Property Name="StartingPointLng" Type="Double" Nullable="false" />
+    <Property Name="DestinatiPnpointLat" Type="Double" Nullable="false" />
+    <Property Name="DestinatiPnpointLng" Type="Double" Nullable="false" />
+    <Property Name="DepartureTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="FixedPrice" Type="Double" Nullable="false" />
+    <Property Name="DayInTheWeek" Type="Int32" Nullable="false" />
+    <Property Name="PriorityTime" Type="Boolean" Nullable="false" />
+    <Property Name="PriorityPrice" Type="Boolean" Nullable="false" />
+    <Property Name="PriorityDriverCode" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RegularUser" Relationship="Self.FK__Travel__UserId__151B244E" FromRole="Travel" ToRole="RegularUsers" />
+    <NavigationProperty Name="TaxiDriver" Relationship="Database1Model.FK__Travel__Priority__503BEA1C" FromRole="Travel" ToRole="TaxiDriver" />
+  </EntityType>
+  <Association Name="FK__DriverRev__UserI__5AEE82B9">
+    <End Role="RegularUsers" Type="Self.RegularUser" Multiplicity="1" />
+    <End Role="DriverReview" Type="Self.DriverReview" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegularUsers">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="DriverReview">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RegularUs__Recom__41EDCAC5">
+    <End Role="TaxiDriver" Type="Self.TaxiDriver" Multiplicity="0..1" />
+    <End Role="RegularUsers" Type="Self.RegularUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxiDriver">
+        <PropertyRef Name="DriverId" />
+      </Principal>
+      <Dependent Role="RegularUsers">
+        <PropertyRef Name="RecommendedDriverCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Travel__UserId__151B244E">
+    <End Role="RegularUsers" Type="Self.RegularUser" Multiplicity="1" />
+    <End Role="Travel" Type="Self.Travel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegularUsers">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Travel">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TaxiDrive__Stati__43D61337">
+    <End Role="TaxiStations" Type="Self.TaxiStation" Multiplicity="0..1" />
+    <End Role="TaxiDriver" Type="Self.TaxiDriver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxiStations">
+        <PropertyRef Name="StationCode" />
+      </Principal>
+      <Dependent Role="TaxiDriver">
+        <PropertyRef Name="StationCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TaxiDrive__Vehic__42E1EEFE">
+    <End Role="Taxis" Type="Self.Taxi" Multiplicity="1" />
+    <End Role="TaxiDriver" Type="Self.TaxiDriver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Taxis">
+        <PropertyRef Name="VehicleTaxiCode" />
+      </Principal>
+      <Dependent Role="TaxiDriver">
+        <PropertyRef Name="VehicleTaxiCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Taxis__StationCo__01142BA1">
+    <End Role="TaxiStations" Type="Self.TaxiStation" Multiplicity="1" />
+    <End Role="Taxis" Type="Self.Taxi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxiStations">
+        <PropertyRef Name="StationCode" />
+      </Principal>
+      <Dependent Role="Taxis">
+        <PropertyRef Name="StationCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Database1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DriverReviews" EntityType="Self.DriverReview" />
+    <EntitySet Name="RegularUsers" EntityType="Self.RegularUser" />
+    <EntitySet Name="TaxiDrivers" EntityType="Self.TaxiDriver" />
+    <EntitySet Name="Taxis" EntityType="Self.Taxi" />
+    <EntitySet Name="TaxiStations" EntityType="Self.TaxiStation" />
+    <EntitySet Name="Travels" EntityType="Self.Travel" />
+    <AssociationSet Name="FK__DriverRev__UserI__5AEE82B9" Association="Self.FK__DriverRev__UserI__5AEE82B9">
+      <End Role="RegularUsers" EntitySet="RegularUsers" />
+      <End Role="DriverReview" EntitySet="DriverReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RegularUs__Recom__41EDCAC5" Association="Self.FK__RegularUs__Recom__41EDCAC5">
+      <End Role="TaxiDriver" EntitySet="TaxiDrivers" />
+      <End Role="RegularUsers" EntitySet="RegularUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Travel__UserId__151B244E" Association="Self.FK__Travel__UserId__151B244E">
+      <End Role="RegularUsers" EntitySet="RegularUsers" />
+      <End Role="Travel" EntitySet="Travels" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TaxiDrive__Stati__43D61337" Association="Self.FK__TaxiDrive__Stati__43D61337">
+      <End Role="TaxiStations" EntitySet="TaxiStations" />
+      <End Role="TaxiDriver" EntitySet="TaxiDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TaxiDrive__Vehic__42E1EEFE" Association="Self.FK__TaxiDrive__Vehic__42E1EEFE">
+      <End Role="Taxis" EntitySet="Taxis" />
+      <End Role="TaxiDriver" EntitySet="TaxiDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Taxis__StationCo__01142BA1" Association="Self.FK__Taxis__StationCo__01142BA1">
+      <End Role="TaxiStations" EntitySet="TaxiStations" />
+      <End Role="Taxis" EntitySet="Taxis" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DriverRev__Drive__4E53A1AA" Association="Database1Model.FK__DriverRev__Drive__4E53A1AA">
+      <End Role="TaxiDriver" EntitySet="TaxiDrivers" />
+      <End Role="DriverReview" EntitySet="DriverReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Travel__Priority__503BEA1C" Association="Database1Model.FK__Travel__Priority__503BEA1C">
+      <End Role="TaxiDriver" EntitySet="TaxiDrivers" />
+      <End Role="Travel" EntitySet="Travels" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK__DriverRev__Drive__4E53A1AA">
+    <End Type="Database1Model.TaxiDriver" Role="TaxiDriver" Multiplicity="1" />
+    <End Type="Database1Model.DriverReview" Role="DriverReview" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxiDriver">
+        <PropertyRef Name="DriverId" />
+      </Principal>
+      <Dependent Role="DriverReview">
+        <PropertyRef Name="DriverReviewCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Travel__Priority__503BEA1C">
+    <End Type="Database1Model.TaxiDriver" Role="TaxiDriver" Multiplicity="1" />
+    <End Type="Database1Model.Travel" Role="Travel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaxiDriver">
+        <PropertyRef Name="DriverId" />
+      </Principal>
+      <Dependent Role="Travel">
+        <PropertyRef Name="PriorityDriverCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,31 @@
+::ng-deep .navbar{
+    background-color:#fff423 !important;
+    font-size: 15px;
+}
+::ng-deep .form-control:focus {
+    border-color: rgb(250, 252, 170) !important;
+    box-shadow: 0 0 0 0.25rem rgba(246, 248, 134, 0.25) !important;
+}
+::ng-deep .form-check-input:focnavbarNavus {
+    border-color: rgb(250, 252, 170) !important;
+    box-shadow: 0 0 0 0.25rem rgba(246, 248, 134, 0.25) !important;
+}
+::ng-deep .form-check-input:checked {
+    background-color:#fff423 !important;
+    border-color: #fff423 !important;
+}
+::ng-deep .form-select:focus {
+    border-color: rgb(250, 252, 170) !important;
+    box-shadow: 0 0 0 0.25rem rgba(246, 248, 134, 0.25) !important;
+}
+::ng-deep .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+::ng-deep .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-right-radius: 1% !important;
+    border-bottom-right-radius: 1% !important;
+}
+::ng-deep .card{
+    margin: auto !important;
+}

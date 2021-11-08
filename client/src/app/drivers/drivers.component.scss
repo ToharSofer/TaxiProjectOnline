@@ -1,0 +1,28 @@
+::ng-deep .card{
+    text-align: right !important;
+}
+svg{
+    margin-left: 2% !important;
+}
+::ng-deep .card{
+    margin: auto;
+    background:none !important;
+    color: white !important;
+    direction: rtl !important;
+    text-align: center;
+}
+::ng-deep .carousel{
+    outline: none !important;
+}
+::ng-deep p {
+    margin-bottom: 0.05rem !important;
+}
+::ng-deep .mb-3{
+    margin-top: 1rem !important;
+}
+::ng-deep .card-title{
+    cursor: pointer;
+}
+::ng-deep .card-title:hover{
+    color: rgb(207, 207, 207);
+}

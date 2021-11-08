@@ -1,0 +1,14 @@
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\bin\Debug\DAL.dll.config
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\bin\Debug\DAL.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\bin\Debug\DAL.pdb
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\obj\Debug\DAL.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\obj\Debug\DAL.pdb
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\bin\Debug\DataObject.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DAL\bin\Debug\DataObject.pdb

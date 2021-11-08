@@ -1,0 +1,6 @@
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DataObject\bin\Debug\DataObject.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DataObject\bin\Debug\DataObject.pdb
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DataObject\obj\Debug\DataObject.csprojAssemblyReference.cache
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DataObject\obj\Debug\DataObject.csproj.CoreCompileInputs.cache
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DataObject\obj\Debug\DataObject.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\DataObject\obj\Debug\DataObject.pdb

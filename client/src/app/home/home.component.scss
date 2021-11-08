@@ -1,0 +1,22 @@
+::ng-deep .card{
+    margin: auto;
+    background:none !important;
+    color: white !important;
+    direction: rtl !important;
+    text-align: center;
+}
+::ng-deep .card-link{
+    color: #fff423 !important;
+}
+a{
+    margin: 1% !important;
+    text-decoration: none;
+}
+span{
+    color: #fff423 !important;
+    margin: 2% !important;
+}
+
+img{
+    height: 58%;
+}

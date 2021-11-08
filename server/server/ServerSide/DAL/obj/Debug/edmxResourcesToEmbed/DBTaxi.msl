@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Database1Entities">
+    <EntitySetMapping Name="DriverReviews">
+      <EntityTypeMapping TypeName="Database1Model.DriverReview">
+        <MappingFragment StoreEntitySet="DriverReview">
+          <ScalarProperty Name="ReviewCode" ColumnName="ReviewCode" />
+          <ScalarProperty Name="Review" ColumnName="Review" />
+          <ScalarProperty Name="DriverReviewCode" ColumnName="DriverReviewCode" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegularUsers">
+      <EntityTypeMapping TypeName="Database1Model.RegularUser">
+        <MappingFragment StoreEntitySet="RegularUsers">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CellphoneuserNumber" ColumnName="CellphoneuserNumber" />
+          <ScalarProperty Name="RecommendedDriverCode" ColumnName="RecommendedDriverCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaxiDrivers">
+      <EntityTypeMapping TypeName="Database1Model.TaxiDriver">
+        <MappingFragment StoreEntitySet="TaxiDriver">
+          <ScalarProperty Name="DriverId" ColumnName="DriverId" />
+          <ScalarProperty Name="DriverName" ColumnName="DriverName" />
+          <ScalarProperty Name="PelephoneDriverNumber" ColumnName="PelephoneDriverNumber" />
+          <ScalarProperty Name="VehicleTaxiCode" ColumnName="VehicleTaxiCode" />
+          <ScalarProperty Name="CurrentLocationLat" ColumnName="CurrentLocationLat" />
+          <ScalarProperty Name="CurrentLocationLng" ColumnName="CurrentLocationLng" />
+          <ScalarProperty Name="ImageDriver" ColumnName="ImageDriver" />
+          <ScalarProperty Name="StationCode" ColumnName="StationCode" />
+          <ScalarProperty Name="Prioritys" ColumnName="Prioritys" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Taxis">
+      <EntityTypeMapping TypeName="Database1Model.Taxi">
+        <MappingFragment StoreEntitySet="Taxis">
+          <ScalarProperty Name="VehicleTaxiCode" ColumnName="VehicleTaxiCode" />
+          <ScalarProperty Name="StationCode" ColumnName="StationCode" />
+          <ScalarProperty Name="NumberOfSeats" ColumnName="NumberOfSeats" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaxiStations">
+      <EntityTypeMapping TypeName="Database1Model.TaxiStation">
+        <MappingFragment StoreEntitySet="TaxiStations">
+          <ScalarProperty Name="StationCode" ColumnName="StationCode" />
+          <ScalarProperty Name="StationName" ColumnName="StationName" />
+          <ScalarProperty Name="CityStationLocation" ColumnName="CityStationLocation" />
+          <ScalarProperty Name="NumbrOfTaxis" ColumnName="NumbrOfTaxis" />
+          <ScalarProperty Name="PricePerKilometer" ColumnName="PricePerKilometer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Travels">
+      <EntityTypeMapping TypeName="Database1Model.Travel">
+        <MappingFragment StoreEntitySet="Travel">
+          <ScalarProperty Name="TravelCode" ColumnName="TravelCode" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="StartingPointLat" ColumnName="StartingPointLat" />
+          <ScalarProperty Name="StartingPointLng" ColumnName="StartingPointLng" />
+          <ScalarProperty Name="DestinatiPnpointLat" ColumnName="DestinatiPnpointLat" />
+          <ScalarProperty Name="DestinatiPnpointLng" ColumnName="DestinatiPnpointLng" />
+          <ScalarProperty Name="DepartureTime" ColumnName="DepartureTime" />
+          <ScalarProperty Name="FixedPrice" ColumnName="FixedPrice" />
+          <ScalarProperty Name="DayInTheWeek" ColumnName="DayInTheWeek" />
+          <ScalarProperty Name="PriorityTime" ColumnName="PriorityTime" />
+          <ScalarProperty Name="PriorityPrice" ColumnName="PriorityPrice" />
+          <ScalarProperty Name="PriorityDriverCode" ColumnName="PriorityDriverCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

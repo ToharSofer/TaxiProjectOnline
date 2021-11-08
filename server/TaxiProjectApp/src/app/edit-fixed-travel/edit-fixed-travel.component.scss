@@ -1,0 +1,70 @@
+::ng-deep .card{
+    margin: auto;
+    background:none !important;
+    color: white !important;
+    direction: rtl !important;
+    text-align: center;
+}
+::ng-deep .card-link{
+    color: #fff423 !important;
+}
+a{
+    margin: 1% !important;
+    text-decoration: none;
+}
+span{
+    margin: 2% !important;
+}
+::ng-deep .col-12{
+    margin: 2% !important;
+}
+::ng-deep .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-right-radius: 1% !important;
+}
+::ng-deep .btn{
+    margin: 5% !important;
+}
+
+::ng-deep .btn-outline-warning {
+    color: #fff423 !important;
+    border-color: #fff423 !important;
+}
+::ng-deep .btn-outline-warning:hover {
+    color: black !important;
+    background-color:#fff423 !important;
+    border-color: #fff423 !important;
+}
+.signG{
+    color: #fff423;
+}
+svg{
+    margin-right: 3% !important;
+}
+.f{
+    margin-bottom: 10% !important;
+    color: white !important;
+}
+::ng-deep .btn-link {
+    font-weight: 200 !important;
+    color: #fff423 !important;
+}
+::ng-deep .btn:focus, .btn.focus {
+    outline: none;
+    box-shadow: none;
+}
+::ng-deep fieldset{
+    width: 20% !important;
+    font-size: large !important;
+}
+::ng-deep .ngb-tp-input {
+    font-size: small;
+    padding: 0;
+}
+::ng-deep .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+::ng-deep .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-right-radius: 1% !important;
+    border-bottom-right-radius: 1% !important;
+}

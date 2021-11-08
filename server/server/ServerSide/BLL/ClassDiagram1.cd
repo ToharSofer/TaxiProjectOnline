@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BLL.DriverReviewBLL">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAIAAAAAAAAEAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>DriverReviewBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLL.RegularUserBLL">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAIAAAAAAAAEBAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>RegularUserBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLL.TaxiBLL">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAIAAAAAAAAEAAAAAAhAAAAAAAAA=</HashCode>
+      <FileName>TaxiBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLL.TaxiDriverBLL">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAIAAAAAAAAEAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>TaxiDriverBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLL.TaxiStationBLL">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAIAAAAAAAAEAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>TaxiStationBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLL.TravelBLL">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAIAAAAAAAAEAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>TravelBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

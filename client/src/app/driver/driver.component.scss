@@ -1,0 +1,132 @@
+::ng-deep .card{
+    margin: auto !important;
+    background:none !important;
+    color: white !important;
+    direction: rtl !important;
+    text-align: center !important;
+    padding: 2% !important;
+    border: none !important;
+}
+
+::ng-deep .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+::ng-deep .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-right-radius: 1% !important;
+    border-bottom-right-radius: 1% !important;
+}
+::ng-deep .col-12{
+    margin-bottom: 2% !important;
+    margin-top: 2% !important;
+}
+svg{
+    cursor: pointer;
+    float: left;
+    margin-left: 3%;
+    outline: none;
+    margin-right: 3% !important;
+    color: black !important;
+}
+table{
+    margin-bottom: 55vh;
+}
+body{
+    padding-bottom: 3vh;;
+    background-image: url("https://www.google.com/maps/about/images/mymaps/mymaps-desktop-16x9.png");
+}
+::ng-deep .card-footer{
+    border: 0 !important;
+    background: 0 !important;
+}
+::ng-deep .al{
+    width: 100% !important;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    text-align: right !important;
+    padding-bottom: 5vh !important;
+    margin-bottom: 70vh !important;
+}
+::ng-deep .alf{
+    width: 100% !important;
+    text-align: right !important;
+    background: none !important;
+    border: none !important;
+}
+::ng-deep .btn-outline-primary {
+    border-color: black !important;
+    border-radius: 100%;
+    padding: 12px !important;    
+    float: left;
+}
+::ng-deep .btn-outline-primary:hover {
+    color: black !important;
+    background-color:#fff423 !important;
+    border-color: #fff423 !important;
+}
+::ng-deep .btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.25rem rgba(246, 248, 134, 0.25) !important;
+}
+
+
+::ng-deep .btn-primary {
+    border-color: rgb(13, 185, 13);
+    border-radius: 100%;
+    padding: 12px !important;    
+    float: right;
+    background-color: rgb(13, 185, 13);
+}
+::ng-deep .btn-primary:hover {
+    color: black !important;
+    background-color:rgb(12, 150, 12) !important;
+    border-color: rgb(12, 150, 12) !important;
+}
+::ng-deep .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.25rem rgba(246, 248, 134, 0.25) !important;
+}
+::ng-deep .btn-primary:focus, .btn-primary.focus {
+    background-color:rgb(12, 150, 12);
+}
+
+
+::ng-deep .btn-secondary {
+    border-color: red;
+    border-radius: 100%;
+    padding: 12px !important;    
+    float: left;
+    background-color: red;
+}
+::ng-deep .btn-secondary:hover {
+    color: black !important;
+    background-color:rgb(223, 1, 1) !important;
+    border-color: rgb(223, 1, 1) !important;
+}
+::ng-deep .btn-secondary:focus, .btn-secondary.focus {
+    box-shadow: 0 0 0 0.25rem rgba(246, 248, 134, 0.25) !important;
+}
+::ng-deep .btn-secondary:focus, .btn-secondary.focus {
+    background-color: rgb(223, 1, 1);
+}
+
+
+::ng-deep .btn-info {
+    color: black !important;
+    background-color: #fff423;
+    border-color: #fff423 !important;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 100%;
+}
+::ng-deep .btn-info:hover {
+    color: black !important;
+    background-color:#eee422 !important;
+    border-color: #eee422 !important;
+}
+::ng-deep .btn-info:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.25rem rgba(246, 248, 134, 0.25) !important;
+}
+::ng-deep .btn-info:focus, .btn-info.focus {
+    color: #fff;
+    background-color: #eee422;
+}
+

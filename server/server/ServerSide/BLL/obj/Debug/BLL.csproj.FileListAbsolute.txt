@@ -1,0 +1,17 @@
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\bin\Debug\BLL.dll.config
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\bin\Debug\BLL.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\bin\Debug\BLL.pdb
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\bin\Debug\DAL.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\bin\Debug\DataObject.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\bin\Debug\DAL.pdb
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\bin\Debug\DAL.dll.config
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\bin\Debug\DataObject.pdb
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\obj\Debug\BLL.dll
+C:\Users\Tohar\Documents\פרויקט תיכנות 2021\server\ServerSide\BLL\obj\Debug\BLL.pdb

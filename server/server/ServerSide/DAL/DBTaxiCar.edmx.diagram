@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fb7ccb19be9d40c09eeb5b45d8de1926" Name="Diagram1" ZoomLevel="71">
+        <EntityTypeShape EntityType="Database1Model.DriverReview" Width="1.5" PointX="9.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.RegularUser" Width="1.5" PointX="7.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.TaxiDriver" Width="1.5" PointX="4.5" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Taxi" Width="1.5" PointX="2.125" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.TaxiStation" Width="1.5" PointX="0.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Travel" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="Database1Model.FK__DriverRev__UserI__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__RegularUs__Recom__41EDCAC5" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__Travel__UserId__151B244E" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__TaxiDrive__Stati__43D61337" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__TaxiDrive__Vehic__42E1EEFE" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__Taxis__StationCo__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__DriverRev__Drive__4E53A1AA" />
+        <AssociationConnector Association="Database1Model.FK__Travel__Priority__503BEA1C" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

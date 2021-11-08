@@ -1,0 +1,56 @@
+
+::ng-deep .card{
+    margin: auto !important;
+    background:none !important;
+    color: white !important;
+    direction: rtl !important;
+    text-align: center !important;
+    padding: 1% !important;
+    border: none !important;
+    position: relative;
+    bottom: 102% !important;
+    right: 8% !important;
+}
+
+::ng-deep .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+::ng-deep .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-right-radius: 1% !important;
+    border-bottom-right-radius: 1% !important;
+}
+::ng-deep .col-12{
+    margin-bottom: 2% !important;
+    margin-top: 2% !important;
+}
+svg{
+    cursor: pointer;
+    float: left;
+    margin-left: 3%;
+    outline: none;
+    margin-right: 3% !important;
+    color: black !important;
+}
+// table{
+//     margin-bottom: 55vh;
+// }
+// body{
+//     // background-image: url("https://www.google.com/maps/about/images/mymaps/mymaps-desktop-16x9.png");
+// }
+::ng-deep .card-footer{
+    border: 0 !important;
+    background: 0 !important;
+}
+img{
+    height: 58%;
+}
+// #floating-panel {
+//     background: #fff;
+//     padding: 5px;
+//     font-size: 14px;
+//     font-family: Arial;
+//     border: 1px solid #ccc;
+//     box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+//     display: none;
+//   }
